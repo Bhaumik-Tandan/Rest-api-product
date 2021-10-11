@@ -6,6 +6,7 @@ heroku create aine-ai-task-bhaumik-tandan
  !    can only contain lowercase     
  !    letters, digits, and dashes. 
 
+git push heroku master
 
  https://git.heroku.com/aine-ai-task-bhaumik-tandan.git
  https://aine-ai-task-bhaumik-tandan.herokuapp.com
