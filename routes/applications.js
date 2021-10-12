@@ -10,8 +10,8 @@ router.route('/').post((req, res) => {
 
 
 
-router.route('/post').get((req, res) => {
-  application.find({post:req.body.post})
+router.route('/:post').get((req, res) => {
+  application.find({post:req.params.post})
     .then(j => res.json(j))
     .catch(err => res.status(400).json('Error: ' + err));
 });

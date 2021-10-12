@@ -14,8 +14,8 @@ router.route('/').get((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
-router.route('/post').get((req, res) => {
-  job.find({post:req.body.post})
+router.route('/:post').get((req, res) => {
+  job.find({post:req.params.post})
     .then(j => res.json(j[0]))
     .catch(err => res.status(400).json('Error: ' + err));
 });
