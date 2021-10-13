@@ -8,12 +8,12 @@ router.route('/').post((req, res) => {
     .catch(err => res.status(400).json('Error: ' + err));
 });
 
-
-
-router.route('/:post').get((req, res) => {
-  application.find({post:req.params.post})
+router.route('/').get((req, res) => {
+  application.find()
     .then(j => res.json(j))
     .catch(err => res.status(400).json('Error: ' + err));
 });
+
+
 
 module.exports = router;
