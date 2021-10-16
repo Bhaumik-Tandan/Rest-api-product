@@ -1,1 +1,1 @@
-![https://product-task-bhaummik-tandan.herokuapp.com](Deployed on Heroku)
+![Deployed on heroku](https://product-task-bhaummik-tandan.herokuapp.com)
